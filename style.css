@@ -3,10 +3,10 @@ body{
     font-size: 30px;
 }
 .heading{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia;
     align-content: center;
     font-weight: bolder;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left:550px
 
 }
@@ -17,7 +17,7 @@ body{
     height: 600px;
     border-radius: 5px;
     box-shadow:  3px 2px 3px grey,
-    inset 3px 2px 3px rgb(189, 183, 183), inset 2px 2px 3px rgb(78, 78, 78);
+    inset 3px 2px 3px rgb(189, 183, 183), inset 2px 2px 3px rgb(78, 78, 78), inset 2px 2px 3px rgb(26, 26, 26);
 
 }
 .datas{
@@ -74,7 +74,7 @@ body{
     margin-top: 10px;
     width: 280px;
     align-items: center;
-    padding-left: 100px;
+    padding-left: 132px;
   }
   .card-text1, .card-text2, .card-text3, .card-text4,.card-text5, .card-text6{
     margin-left: -75px;
