@@ -25,20 +25,24 @@ function bikeData(){
         // get number of Bike from user
         let input= document.querySelector('.datas').value
         // Check if the number greater than 0 and lesser than 676
-        if((input > 0) && (input < 677) ){
-          //display data in cards
-          document.querySelector('.card-text1').innerHTML = `<b style="font-size:22px;">ID:</b>       ${data.networks[input].id}` 
-          document.querySelector('.card-text2').innerHTML = `<b style="font-size:22px;">Bikename:</b>       ${data.networks[input].name}`
-          document.querySelector('.card-text3').innerHTML = `<b style="font-size:22px;">Href:</b>  <a href="${data.networks[input].href}" target=" "> https:/${data.networks[input].href} </a>`
-          document.querySelector('.card-text4').innerHTML = `<b style="font-size:22px;">Company:</b>        ${data.networks[input].company}`
-          document.querySelector('.card-text5').innerHTML = `<b style="font-size:22px;">Country:</b>        ${data.networks[input].location.country}`
-          document.querySelector('.card-text6').innerHTML = `<b style="font-size:22px;">City:</b>        ${data.networks[input].location.city}`
-          
+        let cardDisplay=document.querySelector(".card")
+    
+                if((input < 0) || (input > 677) ){
+          // if the above condition fails alert message shows 
+          alert("Enter Number Between 0 to 676");
+          input.value=" "
         }
         else{
-         // if the above condition fails alert message shows 
-          alert("enter Between 0 to 676")
-          input.clear();
+        
+           //display data in cards
+           input.value=" ";
+           document.querySelector('.card-text1').innerHTML = `<b style="font-size:22px;">ID:</b>       ${data.networks[input].id}` 
+           document.querySelector('.card-text2').innerHTML = `<b style="font-size:22px;">Bikename:</b>       ${data.networks[input].name}`
+           document.querySelector('.card-text3').innerHTML = `<b style="font-size:22px;">Href:</b>  <a href="${data.networks[input].href}" target=" "> https:/${data.networks[input].href} </a>`
+           document.querySelector('.card-text4').innerHTML = `<b style="font-size:22px;">Company:</b>        ${data.networks[input].company}`
+           document.querySelector('.card-text5').innerHTML = `<b style="font-size:22px;">Country:</b>        ${data.networks[input].location.country}`
+           document.querySelector('.card-text6').innerHTML = `<b style="font-size:22px;">City:</b>        ${data.networks[input].location.city}`
+           
         }
         
        
